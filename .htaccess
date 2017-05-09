@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} add_event.php
+RewriteCond %{QUERY_STRING} ^\z
+RewriteRule ^(.*)$ booking.php?scriptname=$1 [R=301,L]
